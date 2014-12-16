@@ -16,8 +16,9 @@ class User extends Model{
 
     public static function getByLoginPassword($login, $password){
         $password = md5($password);
-        $query = "SELECT * FROM `".self::TABLE."`
-				WHERE `login` = '$login' AND `password` = '$password'";
+        $query = "SELECT * FROM `".self::TABLE."` AS `main`
+                    LEFT JOIN `authorization` AS `a` ON `main`.`id` = `a`.`id_user`
+    				WHERE `main`.`login` = '$login' AND `a`.`pswd` = '$password'";
         $row = Db::getRow($query);
         if ($row){
             $user = new self();

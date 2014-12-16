@@ -52,7 +52,7 @@ abstract class Model {
         if (isset(static::$links_description[$link_name])) {
             $link = static::$links_description[$link_name]; // Укорот
             $model_name = $link['model'];
-            //TODO: класс Application
+            //TODO: описать класс Application
             Application::loadModelClass($model_name); // Загружаем класс связанной модели
 
             // Для каждого типа связи разные запросы
