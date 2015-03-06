@@ -1,5 +1,7 @@
 <?php
 
+//test comment
+
 class User extends Model{
     const TABLE = 'users';
 
