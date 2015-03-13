@@ -1,10 +1,10 @@
 <?php
 class Db {
 	static public function connect ($host, $login, $password, $database){
-		if(mysql_connect($host, $login, $password) != false){
-			echo ('connection is open!');
-		}
-		//mysql_connect($host, $login, $password) or die(mysql_error());
+//		if(mysql_connect($host, $login, $password) != false){
+//			echo ('connection is open!');
+//		}
+		mysql_connect($host, $login, $password) or die(mysql_error());
 		mysql_select_db($database) or die(mysql_error());
 	}
 
