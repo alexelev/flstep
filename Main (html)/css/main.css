@@ -1,0 +1,17 @@
+.content {
+    padding: 25px;
+}
+.video {
+    position: relative;
+    margin: 0 auto 20px;
+    width: 740px;
+    height: 370px;
+    background: #508199;
+    z-index: 3;
+}
+.content p {
+    position: relative;
+    z-index: 10;
+    background: #fff;
+    color: #000;
+}
