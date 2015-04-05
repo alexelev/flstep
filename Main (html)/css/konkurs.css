@@ -1,0 +1,28 @@
+.content {
+    padding: 10px 0;
+}
+.menu {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    margin: 0 auto 10px;
+    background: #005689 url(../img/grid.png);
+    z-index: 3;
+}
+.filter {
+    position: relative;
+    z-index: 3;
+    margin-left: 10px;
+    width: 255px;
+    height: 400px;
+    float: left;
+    background: rgba(0, 0, 0, 0.5);
+}
+.box_container {
+    position: relative;
+    z-index: 3;
+    margin-left: 275px;
+    margin-right: 10px;
+    height: 850px;
+    background: #888;
+}
